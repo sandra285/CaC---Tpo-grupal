@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: rgb(1, 1, 33);
+}
+
+main {
+    position: relative;
+}
+
+header {
+    background: rgb(1, 1, 33);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding: 20px;
+}
+
+header .menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;    
+}
+
+
+.seccion1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    position: relative;
+    max-width: 900px;
+    z-index: 100;
+    color:rgb(3, 31, 59);   
+    text-align: center;
+}
+
+h1 {
+    color: beige;
+    font-size: 5rem;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+h1:hover {
+    text-shadow: 0 0 10px rgb(33, 53, 156), 0 0 20px rgb(33, 53, 156), 0 0 40px rgb(33, 53, 156), 0 0 80px rgb(33, 53, 156);
+}
+
+p {
+    background-color: rgba(255,255,255,0.5);
+    border: 10px double rgb(235, 220, 220);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.imagenFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    color: rgb(3, 31, 59);
+    background: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    color: white;
+    background: rgb(3, 31, 59);
+}
+
+
+
+/*Media Queries*/
+
+@media (max-width: 992px){
+    h1{
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        border: 6px double rgb(235, 220, 220);
+        border-radius: 7px;
+    }
+
+    .imagenFondo {
+        height: 750px;
+    }
+}
+
+@media (max-width: 576px){
+    h1 {
+        font-size: 2.5rem;     
+    }
+
+    p {
+        font-size: 0.8rem;
+        border: 4px double rgb(235, 220, 220);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .imagenFondo {
+        height: 500px;
+    }
+}
