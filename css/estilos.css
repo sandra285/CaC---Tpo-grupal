@@ -13,8 +13,10 @@ main {
     position: relative;
 }
 
-header {
-    background: rgb(1, 1, 33);
+.cabecera {
+    background: rgb(1,1,33);
+    width: 100%;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,18 +24,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 75px;
-    padding: 20px;
 }
 
-header .menu a{
+.logo {
+    margin-left: 20px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    float: right;
+    font-size: 28px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.menu ul li{
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+    display: inline;
+}
+
+.menu li a:hover {
+    background: rgba(236, 244, 245, 0.3);
+}
+
+.menu li a {
+    padding: 15px;
     color: white;
     text-decoration: none;
-    font-size: 1.2em;    
+    
 }
 
-
+/*Sección1*/
 .seccion1 {
     position: relative;
     width: 100%;
@@ -51,18 +78,18 @@ header .menu a{
     text-align: center;
 }
 
-h1 {
+.tituloprincipal {
     color: beige;
     font-size: 5rem;
     font-weight: 500;
     transition: 0.5s;
 }
 
-h1:hover {
+.tituloprincipal:hover {
     text-shadow: 0 0 10px rgb(33, 53, 156), 0 0 20px rgb(33, 53, 156), 0 0 40px rgb(33, 53, 156), 0 0 80px rgb(33, 53, 156);
 }
 
-p {
+.parrafoinicio {
     background-color: rgba(255,255,255,0.5);
     border: 10px double rgb(235, 220, 220);
     border-radius: 10px;
@@ -98,16 +125,51 @@ p {
     background: rgb(3, 31, 59);
 }
 
-
-
 /*Media Queries*/
 
 @media (max-width: 992px){
-    h1{
+   
+    header label {
+        display: block;
+        float: right;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background: rgb(1,1,33);
+        transition: all 0.5s;
+        transform: translateX(-100%);
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid rgba(236, 244, 245, 0.3);
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+        transform: translateX(0%);
+    }
+
+    .contenido {
+        z-index: 0;
+    }
+
+    .tituloprincipal{
         font-size: 3.5rem;
     }
 
-    p {
+    .parrafoinicio {
         font-size: 1.1rem;
         border: 6px double rgb(235, 220, 220);
         border-radius: 7px;
@@ -119,11 +181,12 @@ p {
 }
 
 @media (max-width: 576px){
-    h1 {
+
+    .tituloprincipal {
         font-size: 2.5rem;     
     }
 
-    p {
+    .parrafoinicio {
         font-size: 0.8rem;
         border: 4px double rgb(235, 220, 220);
         border-radius: 5px;
