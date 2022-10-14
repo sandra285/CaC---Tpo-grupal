@@ -1,66 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-    background: rgb(1, 1, 33);
-}
-
-main {
-    position: relative;
-}
-
-.cabecera {
-    background: rgb(1,1,33);
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    margin-left: 20px;
-}
-
-#btn-menu {
-    display: none;
-}
-
-header label {
-    display: none;
-    float: right;
-    font-size: 28px;
-    margin: 10px 10px;
-    cursor: pointer;
-}
-
-.menu ul li{
-    margin: 10px;
-    padding: 5px;
-    list-style: none;
-    display: inline;
-}
-
-.menu li a:hover {
-    background: rgba(236, 244, 245, 0.3);
-}
-
-.menu li a {
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    
-}
-
-/*Sección1*/
+/*Inicio*/
 .seccion1 {
     position: relative;
     width: 100%;
@@ -104,8 +42,7 @@ header label {
     top: 0;
     left: 0;
     width: 100%;
-    height: 900px;
-    object-fit: cover;
+    height: 100vh;
     opacity: 0.6;
 }
 
@@ -129,38 +66,7 @@ header label {
 
 @media (max-width: 992px){
    
-    header label {
-        display: block;
-        float: right;
-        padding-top: 10px;
-        padding-right: 10px;
-    }
-
-    .menu {
-        position: absolute;
-        top: 50px;
-        left: 0px;
-        width: 100%;
-        height: 100vh;
-        background: rgb(1,1,33);
-        transition: all 0.5s;
-        transform: translateX(-100%);
-    }
-
-    .menu ul {
-        flex-direction: column;
-    }
-
-    .menu a {
-        display: block;
-        border-bottom: 1px solid rgba(236, 244, 245, 0.3);
-    }
-    
-    #btn-menu:checked ~ .menu {
-        margin: 0;
-        transform: translateX(0%);
-    }
-
+    /*Seccion1*/
     .contenido {
         z-index: 0;
     }
@@ -176,7 +82,11 @@ header label {
     }
 
     .imagenFondo {
-        height: 750px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0.6;
     }
 }
 
@@ -187,13 +97,15 @@ header label {
     }
 
     .parrafoinicio {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         border: 4px double rgb(235, 220, 220);
         border-radius: 5px;
         padding: 5px;
     }
 
-    .imagenFondo {
-        height: 500px;
-    }
+    .btn {
+        font-size: 0.7rem;
+        margin-top: 30px;
+        padding: 10px 20px;
+    }  
 }

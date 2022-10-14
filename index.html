@@ -4,41 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/navbar.css">  
+    <link rel="stylesheet" href="css/inicio.css">  
+    <link rel="stylesheet" href="css/contacto.css">
+    <script defer src="js/script.js"></script>
     <title>Descubrir Argentina</title>
 </head>
 <body>
-    <header>
-        <div class="cabecera">
-            <a href="#" class="logo">
-                <img src="img/logo.png" alt="Logo">
+    <header class="cabecera">
+        <nav class="navbar">
+            <a href="#inicio" class="logo">
+                <img src="img/logo.png" alt="Logo" heigh="50" widht="50">
+                <div>
+                    Descubrir Argentina
+                </div>
             </a>
-            <input type="checkbox" name="" id="btn-menu">
-            <label for="btn-menu"><img src="img/menu.png" alt="menu"></label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Sección2</a></li>
-                    <li><a href="">Sección3</a></li>
-                    <li><a href="">Sección4</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
-            </nav> 
-        </div>  
+
+            <button class="open-menu">
+                <img src="img/menu.png" alt="abrir menú">
+            </button>
+            <ul class="menu">
+                <button class="close-menu">
+                    <img src="img/cerrar.png" alt="cerrar menú">
+                </button>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#seccion2">Seccion2</a></li>
+                <li><a href="#seccion3">Seccion3</a></li>
+                <li><a href="#seccion4">Seccion4</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>   
+        </nav>   
     </header>
 
     <main>
-        <section class="seccion1">
+        <section class="seccion1" id="inicio">
             <img src="./img/fondo.jpg" alt="imagenFondo" class="imagenFondo">
             <div class="contenido">
                 <h1 class="tituloprincipal">DESCUBRIR <br> ARGENTINA</h1> <br>
                 <p class="parrafoinicio">Paisajes con sierras, montañas, quebradas, ríos, lagos, <br> lagunas, campo y mar esperan a quien se anime a buscarlos. <br> Cada provincia tiene una historia que te está esperando... <br> Tenés que encontrar la tuya.
                 </p>
-                <a href="#" class="btn">Empezar a descubrir...</a>
+                <a href="#seccion2" class="btn">Empezar a descubrir...</a>
             </div>
         </section>
         
+        <section class="contacto" id="contacto">
+            <div class="estamosen">
+                <h4 class="titulo-contacto">Nos encontrás en:</h4>
+                <p class="parrafo-contacto"><img src="img/logo3.png" alt="localizacion" class="iconocontacto"> Aizpuru 950 - Cañada de Gómez (Santa Fe)</p>
+                <p class="parrafo-contacto"><img src="img/reloj.png" alt="horario" class="iconocontacto"> Horarios de atención: Lunes a Viernes de 8 a 16 hs</p>
+                <p class="parrafo-contacto"><img src="img/whatsapp.png" alt="whatsapp" class="iconocontacto"> 3471 - 555555</p>
+                <br>
+                <iframe id="mapacontacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.2325206428619!2d-61.396685470765185!3d-32.820617471783464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c9de5e6a8097f9%3A0x106375c630f2a5d2!2sAizpuru%20950%2C%20Ca%C3%B1ada%20de%20Gomez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1664408490981!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            </div>
+            
+            <article>
+                <div class="formulario">
+                    <h4 class="titulo-contacto">Envianos tu consulta</h4>
+                    <p class="parrafo-contacto">Nuestro equipo responderá a la brevedad</p>
+                    <form action="">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="telefono" placeholder="Teléfono">
+                        <input type="text" name="asunto" placeholder="Asunto">
+                        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+                        <input type="submit" value="Enviar" id="boton">   
+                    </form>
+                </div>
+            </article>
+        </section>  
     </main>
-    
 </body>
 </html>

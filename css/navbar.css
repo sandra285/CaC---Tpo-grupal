@@ -1,0 +1,100 @@
+.cabecera {
+    box-shadow: 0 0 3px white;
+    position: fixed;
+    background: rgb(1, 1, 33);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/*Logo - MODIFICAR*/
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*Menú*/
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+.menu a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px; 
+    position: relative;
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+
+@media (max-width: 992px){
+   
+    /*Menú*/
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: rgb(1, 1, 33);
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none; 
+        transition: opacity 0.3s; 
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu a {
+        line-height: 70px;
+        font-size: 16px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .close-menu {
+        align-self: flex-end;
+        padding: 10px 15px; 
+    }
+
+    .menu_opened { 
+        opacity: 1;
+        pointer-events: all;
+    }  
+}

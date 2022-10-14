@@ -1,0 +1,162 @@
+.contacto{
+    margin-top: 70px;
+    margin-left: 50px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 25px;
+}
+
+.estamosen,
+.formulario {
+    color: white;
+}
+
+.iconocontacto{
+    width: 25px;
+    margin: 0px 2px;
+}
+
+.titulo-contacto {
+    font-size: 18px;
+}
+
+.parrafo-contacto {
+    font-size: 16px;
+    margin: 10px 0 0;
+    padding: 10px;
+}
+
+#mapacontacto {
+    width: 45vw;
+    height:40vh;
+    border-radius: 7px;
+    margin: 0 10px 10px;
+}
+
+/*Formulario*/
+.formulario{
+    width: 30vw;
+    height: 20vh;
+}
+
+form {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(236, 244, 245, 0.2);
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 250px;
+    max-width: 100%;
+}
+
+#boton {
+    color:white;
+    background: rgba(31, 32, 32, 0.3);
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#boton:hover {
+    color: white;
+    background: rgb(1, 1, 33);
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+    
+    .contacto{
+        margin: 30px 0px;
+    }
+
+    .iconocontacto{
+        width: 18px;
+    }
+    
+    .titulo-contacto {
+        font-size: 16px;
+    }
+    
+    .parrafo-contacto {
+        font-size: 14px; 
+    }
+
+    #mapacontacto {
+        width: 45vw;
+        border-radius: 7px;
+        margin: 0 10px;
+    }
+    
+    /*Formulario*/
+    .formulario{
+        width: 35vw;
+        height: 25vh;
+    }
+
+    form {
+        margin: 7px 0;
+        padding: 7px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    #boton {
+        padding: 7px 30px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 576px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-content:stretch;
+        margin: 20px 10px;
+    }
+
+    .titulo-contacto {
+        font-size: 14px;
+    }
+    
+    .parrafo-contacto {
+        font-size: 14px;
+    }
+    
+    #mapacontacto {
+        width: 80vw;
+        height: auto;
+    }
+
+    /*Formulario*/
+    .formulario{
+        width: 85vw;
+        height: auto;
+        margin: 20px 0px;
+    }
+
+    form {
+        margin: 10px 15px;
+    }
+
+    input, textarea {
+        font-size: 12px;
+    }
+}
