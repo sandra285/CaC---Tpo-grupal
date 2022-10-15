@@ -46,6 +46,10 @@
     position: relative;
 }
 
+.menu a:hover{
+    color: rgba(236, 244, 245, 0.5);
+}
+
 .open-menu,
 .close-menu {
     display: none;

@@ -45,8 +45,7 @@
             <img src="./img/fondo.jpg" alt="imagenFondo" class="imagenFondo">
             <div class="contenido">
                 <h1 class="tituloprincipal">DESCUBRIR <br> ARGENTINA</h1> <br>
-                <p class="parrafoinicio">Paisajes con sierras, montañas, quebradas, ríos, lagos, <br> lagunas, campo y mar esperan a quien se anime a buscarlos. <br> Cada provincia tiene una historia que te está esperando... <br> Tenés que encontrar la tuya.
-                </p>
+                <p class="parrafoinicio">Paisajes con sierras, montañas, quebradas, ríos, lagos, <br> lagunas, campo y mar esperan a quien se anime a buscarlos. <br> Cada provincia tiene una historia que te está esperando... <br> Tenés que encontrar la tuya.</p>
                 <a href="#seccion2" class="btn">Empezar a descubrir...</a>
             </div>
         </section>
@@ -61,21 +60,20 @@
                 <iframe id="mapacontacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.2325206428619!2d-61.396685470765185!3d-32.820617471783464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c9de5e6a8097f9%3A0x106375c630f2a5d2!2sAizpuru%20950%2C%20Ca%C3%B1ada%20de%20Gomez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1664408490981!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
             </div>
             
-            <article>
-                <div class="formulario">
-                    <h4 class="titulo-contacto">Envianos tu consulta</h4>
-                    <p class="parrafo-contacto">Nuestro equipo responderá a la brevedad</p>
-                    <form action="">
-                        <input type="text" name="nombre" placeholder="Nombre">
-                        <input type="text" name="email" placeholder="Email">
-                        <input type="text" name="telefono" placeholder="Teléfono">
-                        <input type="text" name="asunto" placeholder="Asunto">
-                        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
-                        <input type="submit" value="Enviar" id="boton">   
-                    </form>
-                </div>
-            </article>
+            <div class="formulario">
+                <h4 class="titulo-contacto">Envianos tu consulta</h4>
+                <p class="parrafo-contacto">Nuestro equipo responderá a la brevedad</p>
+                <form name="formulario">
+                    <input type="text" name="nombre" placeholder="Nombre" autocomplete="off">
+                    <input type="text" name="email" placeholder="Email" autocomplete="off">
+                    <input type="text" name="telefono" placeholder="Teléfono" autocomplete="off">
+                    <input type="text" name="asunto" placeholder="Asunto" autocomplete="off">
+                    <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+                    <input type="button" value="Enviar" id="boton" onclick="validar()">   
+                </form>
+            </div>            
         </section>  
     </main>
+    <script src="js/validacion.js"></script>
 </body>
 </html>

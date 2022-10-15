@@ -33,12 +33,12 @@
     height:40vh;
     border-radius: 7px;
     margin: 0 10px 10px;
+    max-height: 30vh;
 }
 
 /*Formulario*/
 .formulario{
     width: 30vw;
-    height: 20vh;
 }
 
 form {
@@ -47,6 +47,7 @@ form {
     background: rgba(236, 244, 245, 0.2);
     box-sizing: border-box;
     border-radius: 7px;
+    min-height: 45vh;
 }
 
 input, textarea {
