@@ -1,0 +1,47 @@
+.footer {
+    color: white;
+    font-size: 12px;
+    box-shadow: 0 0 3px white; 
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.iconosocial {
+    width: 30px;
+    margin-right: 15px;
+    border-radius: 2px;
+    opacity: 0.70;
+}
+
+.iconosocial:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+
+    .footer {
+        display: block;
+        text-align: center;
+        height: 70px;
+        position: relative;
+        bottom: 0;
+        top:10vh;
+    }
+
+    .iconosocial {
+        width: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px){
+
+    .footer { 
+        font-size: 10px;
+    }
+}
