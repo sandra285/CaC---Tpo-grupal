@@ -1,7 +1,7 @@
 .seccion2{
     width: 100%;
 	max-width: 1200px;
-	margin: auto;
+	margin: 70px auto;
 	padding: 40px 0;
 	display: grid;
 	grid-template-columns: 1fr, 1fr 1fr;
@@ -48,6 +48,8 @@ color: black;}
 .titulo-seccion2{
     color: white;
     font-size: 18px;
+	text-align: center;
+	text-transform:uppercase;
 }
 
 @media (max-width: 992px) {
