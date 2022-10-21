@@ -8,6 +8,30 @@
     align-items: center;
 }
 
+.introduccion {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 30px;
+    margin: 80px 80px 00px 80px;
+    text-align: justify;
+    line-height: 2;
+}
+
+#logo2 {
+    width:100px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+#letra::first-letter{
+    font-size: 40px;
+}
+
+em strong{
+    color:rgb(132, 207, 239);
+}
+
 .contenido {
     position: relative;
     max-width: 900px;
