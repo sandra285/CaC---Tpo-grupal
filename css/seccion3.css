@@ -24,6 +24,14 @@
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center center;
+	cursor:pointer;
+}
+
+.item:hover{
+		background: rgb(15, 10, 46);
+		transform: scale(1.0);
+		opacity: 0.5;
+		transition: 1s;
 }
 
 .item .textos{
