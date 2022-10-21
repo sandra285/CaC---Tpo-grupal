@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+#logobarra{
+    width: 50px;
+}
+
 .introduccion {
     color: white;
     font-size: 1rem;
