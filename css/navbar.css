@@ -5,7 +5,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 70px;
     z-index: 1000;
 }
 
@@ -16,14 +16,12 @@
     margin: 0 auto; 
 }
 
-/*Logo - MODIFICAR*/
 .logo {
     display: flex;
     align-items: center;
     column-gap: 10px;
     font-size: 18px;
     font-weight: 500;
-    /* font-style: italic; */
 }
 
 #logobarra{
@@ -32,6 +30,14 @@
 
 #nombre{
     font-family: 'Fuzzy Bubbles';
+}
+
+#datos-api {
+    color:rgba(236, 244, 245, 0.7);   
+    font-size: 11px;
+    margin-right: 7px;
+    font-weight: 100;
+    font-style: normal;
 }
 
 /*Menú*/
@@ -47,7 +53,7 @@
 }
 
 .menu a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 50px; 
     position: relative;
@@ -109,3 +115,10 @@
         pointer-events: all;
     }  
 }
+
+@media (max-width: 576px){
+    #datos-api {  
+        font-size: 10px; 
+    }
+}
+

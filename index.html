@@ -17,19 +17,25 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" href="img/logo2.ico">
-    <script defer src="js/script.js"></script>
+    <script defer src="js/menu.js"></script>
     <title>Descubrir Argentina</title>
 </head>
 <body>
     <header class="cabecera">
         <nav class="navbar">
-            <a href="#inicio" class="logo">
-                <img id="logobarra" src="img/logo2.png" alt="Logo" heigh="50" widht="50">
-                <div id="nombre">
-                    Descubrir Argentina
+            <div class="logo">
+                <div id="datos-api">
+                    <p id="temperatura-valor"></p>
+                    <p id="viento-velocidad"></p> 
                 </div>
-            </a>
 
+                <a href="#inicio" class="logo">
+                    <img id="logobarra" src="img/logo2.png" alt="Logo" heigh="50" widht="50">
+                    <div id="nombre">
+                        Descubrir <br> Argentina
+                    </div>
+                </a>
+            </div>
             <button class="open-menu">
                 <img src="img/menu.png" alt="abrir menú">
             </button>
@@ -49,24 +55,24 @@
     <main>
         <section class="seccion1" id="inicio">
             <img src="./img/fondo.jpg" alt="imagenFondo" class="imagenFondo">
-            <div class="contenido">
+            <div class="contenido-inicio">
                 <h1 class="tituloprincipal">DESCUBRIR <br> ARGENTINA</h1> <br>
                 <p class="parrafoinicio">Paisajes con sierras, montañas, quebradas, ríos, lagos, <br> lagunas, campo y mar esperan a quien se anime a buscarlos. <br> Cada provincia tiene una historia que te está esperando... <br> Tenés que encontrar la tuya.</p>
                 <a href="#seccion2" class="btn">Empezar a descubrir...</a>
             </div>
         </section>
         
-        <section class="introduccion">
+        <section class="introduccion"  id="seccion2">
             <div>
 
                 <img id="logo2" src="img/logo2.png" alt="logo2">
 
-                <p id="letra">Son muchos los destinos de fama internacional que se ubican en el territorio nacional, pero no solo la integran ellos, hay mágia en muchos lugares recónditos. Argentina cuenta con muchos paisajes y sitios increíbles para visitar y que vale la pena <em>descubrir</em>, desde rincones montañosos, espectaculares cataratas hasta ciudades fascinantes. Hay paisajes y lugares para todos los gustos.</p>
+                <p id="letra">Son muchos los destinos de fama internacional que se ubican en el territorio nacional, pero no solo la integran ellos, hay magia en muchos lugares recónditos. Argentina cuenta con muchos paisajes y sitios increíbles para visitar y que vale la pena <em>descubrir</em>, desde rincones montañosos, espectaculares cataratas hasta ciudades fascinantes. Hay paisajes y lugares para todos los gustos.</p>
                 <p><em><strong>Descubrir Argentina</strong></em> ofrece una serie de propuestas sobre algunos lugares desconocidos que te encantarán para hacer Turismo en Argentina. Explora en las siguientes secciones para descubrir la propuesta perfecta para ti.</p>    
             </div>
         </section>
 
-        <section class="seccion2" id="seccion2">
+        <section class="seccion2">
             <h4 class="titulo-seccion2">Lugares para descubrir Argentina</h4>
             <div class="descubrirargentina">
                 <div class="descubrir" style="background-image: url('./img/Bañado.la.estrella.Formosa.png');"> 
@@ -131,7 +137,7 @@
                 </div>
                 <div class="descubrir" style="background-image: url('./img/Ría.Deseado.SantaCruz.png');">
                     <div class="contenido">
-                        <h3>Ría Deseado - Santa Cruz</h3>
+                        <h3>Río Deseado - Santa Cruz</h3>
                         <p>Avión<br>Alojamiento por 5 días y 4 noches<br>Traslado al hotel, desayuno y cena<br>Paquetes desde $85.000 por persona</p>
                     </div> 
                 </div>
@@ -143,7 +149,7 @@
                 </div>
                 <div class="descubrir" style="background-image: url('./img/Salto.del.agrio.Neuquen.jpg');">
                     <div class="contenido">
-                        <h3>Salto del Ágrio - Neuquén</h3>
+                        <h3>Salto del Agrio - Neuquén</h3>
                         <p>Avión<br>Alojamiento por 5 días y 4 noches<br>Traslado al hotel, desayuno y cena<br>Paquetes desde $130.000 por persona</p>
                     </div> 
                 </div>
@@ -164,6 +170,8 @@
 
         <section class="seccion3" id="seccion3">
             <h4 class="titulo-seccion2">Lugares para una escapada</h4>
+            <br>
+            <p>¿Necesitás escaparte de la rutina y relajarte el fin de semana? Tenemos muchas ofertas pensadas para vos para que disfrutes los mejores destinos.</p>
             <div class="lugarescercanos">
                 <div class="item" id="item1" style="background-image: url('./img/ojos.de.mar.jpg');"> 
                     <div class="textos">
@@ -271,6 +279,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/api.js"></script>
     <script src="js/validacion.js"></script>
 </body>
 </html>
