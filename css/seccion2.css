@@ -30,7 +30,7 @@
     background: rgb(15, 10, 46);
     transform: scale(1.0);
     opacity: 0.5;
-    transition: 1s;
+    transition: 2s;
 }
 
 .descubrir .contenido{
@@ -38,12 +38,14 @@
 	display: grid;
 	grid-template-rows: 1fr, auto;
     color: antiquewhite;
-	text-align: center
-    
+	text-align: center; 
+	text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 1px black;  
 }
 
 h3{
-color: black;}
+color: black;
+text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 1px white;
+}
 
 .titulo-seccion2{
     color: white;
@@ -54,18 +56,18 @@ color: black;}
 
 @media (max-width: 992px) {
 	
-	.lugarescercanos{
+	.descubrirargentina{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 	}
-	.titulo-seccion3{
+	.titulo-seccion2{
 		font-size: 16px;
 	}
 } 
 
 @media (max-width: 576px) {
-	.lugarescercanos{
+	.descubrirargentina{
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 10px;

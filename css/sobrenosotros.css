@@ -43,6 +43,10 @@ hr {
     box-shadow: 0 0 1px white;
 }
 
+#color-palabra:hover{
+    color: rgb(132, 207, 239)
+}
+
 .frase {
     font-style: italic;
     padding: 5px;
