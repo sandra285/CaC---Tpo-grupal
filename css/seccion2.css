@@ -67,6 +67,12 @@ text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 1px white;
 } 
 
 @media (max-width: 576px) {
+	.introduccion {
+		font-size: 14px;
+		max-width: 90%;
+		margin: 0 auto;
+		padding: 5px;
+	}
 	.descubrirargentina{
 		display: grid;
 		grid-template-columns: 1fr;
